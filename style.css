@@ -1,0 +1,387 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background image for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fallback background color */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Animated Text */
+.animated-text {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 100px; /* Increased font size */
+    font-weight: bold;
+    color: white;
+}
+
+.demy-text {
+    font-size: 24px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace; /* Different font */
+    margin-top: 20px;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+    padding: 20px;
+}
+
+.image-boxes {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.image-box {
+    text-align: center;
+    margin: 0 15px;
+    perspective: 1000px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.image-box img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-box:hover img {
+    transform: scale(1.1) rotateY(15deg);
+}
+
+.image-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Arrows */
+button.prev, button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Partners Section */
+.partners {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.partners h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.partners-logos {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.partner-logo {
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Steps to Follow Section */
+.steps-to-follow {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.steps-to-follow h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.step-boxes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.step-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 0 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    perspective: 1000px;
+}
+
+.step-box:hover {
+    transform: translateY(-10px) rotateY(10deg);
+}
+
+.step-box h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.step-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.step-box p {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background image for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fallback background color */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Animated Text */
+.animated-text {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 100px; /* Increased font size */
+    font-weight: bold;
+    color: white;
+}
+
+.demy-text {
+    font-size: 24px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace; /* Different font */
+    margin-top: 20px;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+    padding: 20px;
+}
+
+.image-boxes {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.image-box {
+    text-align: center;
+    margin: 0 15px;
+    perspective: 1000px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.image-box img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-box:hover img {
+    transform: scale(1.1) rotateY(15deg);
+}
+
+.image-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Competitions Section */
+.competitions {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.competitions h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.competitions-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.competition-box {
+    background: rgba(0, 0, 0, 0.7);
+    width: 250px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    perspective: 1000px;
+}
+
+.competition-box:hover {
+    transform: translateY(-10px) rotateY(10deg);
+}
+
+.competition-box h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.competition-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.competition-description {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+.member-limit {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+.rules-link {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.rules-link:hover {
+    text-decoration: underline;
+}

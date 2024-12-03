@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('1st bg.svg'); background-size: cover; background-position: center; background-color: #f0f0f0;"> <!-- Background Image and Color -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+        </ul>
+    </nav>
+
+    <!-- Animated Text Section -->
+    <section class="animated-text">
+        <p id="animatedText">ORGANIZED</p>
+        <!-- Demy Text below -->
+        <p class="demy-text">This is where your journey starts</p>
+    </section>
+
+    <!-- Image Gallery Section with 3D effect and carousel -->
+    <section class="image-gallery">
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <div class="image-boxes">
+            <div class="image-box">
+                <img src="cid1.jpg" alt="Image 1">
+                <p class="image-text">Image 1 Description</p>
+            </div>
+            <div class="image-box">
+                <img src="cid2.jpg" alt="Image 2">
+                <p class="image-text">Image 2 Description</p>
+            </div>
+            <div class="image-box">
+                <img src="cid3.jpeg" alt="Image 3">
+                <p class="image-text">Image 3 Description</p>
+            </div>
+            <div class="image-box">
+                <img src="cid4.jpg" alt="Image 4">
+                
+                <p class="image-text">Image 4 Description</p>
+            </div>
+        </div>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </section>
+
+    <!-- Our Partners Section -->
+    <section class="partners">
+        <h2>Our Partners</h2>
+        <div class="partners-logos">
+            <div class="partner-logo">
+                <img src="mmmm.png" alt="Partner 1">
+            </div>
+            <div class="partner-logo">
+                <img src="image 5.png" alt="Partner 2">
+            </div>
+            <div class="partner-logo">
+                <img src="image 6.png" alt="Partner 3">
+            </div>
+            <div class="partner-logo">
+                <img src="image 7.png" alt="Partner 4">
+            </div>
+            <div class="partner-logo">
+                <img src="image 8.png" alt="Partner 5">
+            </div>
+            <div class="partner-logo">
+                <img src="image 9.png" alt="Partner 6">
+            </div>
+            <div class="partner-logo">
+                <img src="pppp.svg" alt="Partner 7">
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps to Follow Section -->
+    <section class="steps-to-follow">
+        <h2>Steps to Follow</h2>
+        <div class="step-boxes">
+            <div class="step-box">
+                <h3>Analyze</h3>
+                <img src="analyze.gif" alt="Analyze Image" class="step-image">
+                <p>Understand the problem and requirements of the project.</p>
+            </div>
+            <div class="step-box">
+                <h3>Brainstorming</h3>
+                <img src="brainstorm.gif" alt="Brainstorming Image" class="step-image">
+                <p>Generate ideas and solutions for the project.</p>
+            </div>
+            <div class="step-box">
+                <h3>Code</h3>
+                <img src="cat-computer.gif" alt="Code Image" class="step-image">
+                <p>Write and implement the code to bring ideas to life.</p>
+            </div>
+            <div class="step-box">
+                <h3>Evaluate</h3>
+                <img src="evaluation.gif" alt="Evaluate Image" class="step-image">
+                <p>Test and review the project to ensure quality.</p>
+            </div>
+        </div>
+    </section>
+    <section class="competitions">
+        <h2>Competitions</h2>
+        <div class="competitions-boxes">
+            <!-- Competition 1 -->
+            <div class="competition-box">
+                <h3>Speed Programming</h3>
+                <img src="torus-knot.png.svg" alt="Speed Programming Image" class="competition-image">
+                <p class="competition-description">Test your coding speed in a limited time frame.</p>
+                <p class="member-limit">Members: 1-3</p>
+                <a href="rules-speed-programming.pdf" class="rules-link" target="_blank">View Rulebook</a>
+            </div>
+            <!-- Competition 2 -->
+            <div class="competition-box">
+                <h3>Web Development</h3>
+                <img src="torus.png.svg" alt="Web Development Image" class="competition-image">
+                <p class="competition-description">Create stunning websites with the latest technologies.</p>
+                <p class="member-limit">Members: 1-4</p>
+                <a href="rules-web-development.pdf" class="rules-link" target="_blank">View Rulebook</a>
+            </div>
+            <!-- Competition 3 -->
+            <div class="competition-box">
+                <h3>Code in the Dark</h3>
+                <img src="hemisphere.png.svg" alt="Code in the Dark Image" class="competition-image">
+                <p class="competition-description">Write code without seeing the UI.</p>
+                <p class="member-limit">Members: 1-2</p>
+                <a href="rules-code-dark.pdf" class="rules-link" target="_blank">View Rulebook</a>
+            </div>
+            <!-- Competition 4 -->
+            <div class="competition-box">
+                <h3>Machine Learning</h3>
+                <img src="cylinder.png.svg" alt="Machine Learning Image" class="competition-image">
+                <p class="competition-description">Build a model that learns and makes predictions.</p>
+                <p class="member-limit">Members: 1-3</p>
+                <a href="rules-machine-learning.pdf" class="rules-link" target="_blank">View Rulebook</a>
+            </div>
+            <!-- Competition 5 -->
+            <div class="competition-box">
+                <h3>Query Quest</h3>
+                <img src="cube.png.svg" alt="Query Quest Image" class="competition-image">
+                <p class="competition-description">Solve complex database queries.</p>
+                <p class="member-limit">Members: 1-2</p>
+                <a href="rules-query-quest.pdf" class="rules-link" target="_blank">View Rulebook</a>
+            </div>
+            <!-- Competition 6 -->
+            <div class="competition-box">
+                <h3>Pseudo Power</h3>
+                <img src="cone.png.svg" alt="Pseudo Power Image" class="competition-image">
+                <p class="competition-description">Test your logical reasoning with pseudocode challenges.</p>
+                <p class="member-limit">Members: 1-3</p>
+                <a href="rules-pseudo-power.pdf" class="rules-link" target="_blank">View Rulebook</a>
+            </div>
+            <!-- Competition 7 -->
+            <div class="competition-box">
+                <h3>UI/UX Development</h3>
+                <img src="pill.png.svg" alt="UI/UX Development Image" class="competition-image">
+                <p class="competition-description">Design a user-friendly interface with a focus on experience.</p>
+                <p class="member-limit">Members: 1-4</p>
+                <a href="rules-ui-ux.pdf" class="rules-link" target="_blank">View Rulebook</a>
+            </div>
+            <!-- Competition 8 -->
+          
+        </div>
+    </section>
+
+    <!-- Footer Text Section -->
+  
+
+    <!-- Oval Shape Text -->
+   
+    <script src="script.js"></script>
+</body>
+</html>
